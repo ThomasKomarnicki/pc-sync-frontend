@@ -56,7 +56,7 @@ ROOT_URLCONF = 'ML_Site.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['frontend/static/html/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -118,5 +118,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
+
+STATIC_ROOT = "C:/Users/tdk10/Documents/Programming/ML_Website/ML_Site/frontend/static/"
 
 STATIC_URL = '/static/'
