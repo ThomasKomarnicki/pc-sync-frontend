@@ -21,5 +21,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^help/$', views.help, name='help'),
     url(r'^get-started/$', views.get_started, name='get started'),
+    url(r'^download/$', views.download, name='download'),
     url(r'^$', views.home, name='home'),
 ]

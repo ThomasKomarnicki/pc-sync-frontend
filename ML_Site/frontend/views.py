@@ -6,8 +6,12 @@ def home(request):
 
 
 def help(request):
-    pass
+    return render(request, 'help.html')
 
 
 def get_started(request):
-    pass
+    return render(request, 'get_started.html')
+
+
+def download(request):
+    return render(request, 'download.html')
