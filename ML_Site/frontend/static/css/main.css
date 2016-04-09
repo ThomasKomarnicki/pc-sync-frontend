@@ -6,17 +6,7 @@
   display: block;
   text-align: center;
 }
-.iconography-placeholder {
-  background-color: #282828;
-  border-radius: 15px;
-  border: 2px solid white;
-  color: white;
-  text-align: center;
-  width: 240px;
-  height: 160px;
-  font-size: 14px;
-  line-height: 160px;
-}
+.iconography-placeholder,
 .iconography-placeholder-small {
   background-color: #282828;
   border-radius: 15px;
@@ -28,12 +18,22 @@
   font-size: 14px;
   line-height: 160px;
 }
+.iconography-placeholder-small {
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+}
 .white-content {
   background-color: white;
   color: #333637;
 }
+.color-content {
+  background-color: #77c9dd;
+  color: white;
+}
 .standard-content-block {
-  padding: 80px 0;
+  padding: 120px 0;
+  border-top: 1px solid #55595b;
 }
 /* HEADER */
 header {
@@ -72,9 +72,21 @@ header {
 }
 /* HOME */
 .home-intro {
-  padding: 160px 0;
+  padding: 180px 0;
   font-size: 44px;
 }
 .home-hero-phrase {
   margin-bottom: 40px;
+}
+.use-case-row {
+  padding: 0 40px;
+}
+.home-use-case {
+  text-align: center;
+  font-size: 16px;
+  padding: 0 15px;
+}
+.home-use-case > div {
+  margin: auto;
+  margin-bottom: 20px;
 }
