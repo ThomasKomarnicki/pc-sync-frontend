@@ -24,7 +24,7 @@
   line-height: 120px;
 }
 .white-content {
-  background-color: white;
+  background-color: #FAFAFA;
   color: #333637;
 }
 .color-content {
@@ -39,6 +39,7 @@
 header {
   height: 50px;
   background-color: #77c9dd;
+  color: black;
 }
 .links-row {
   padding: 5px 0;
@@ -61,6 +62,7 @@ header {
   margin-right: 16px;
   line-height: 50px;
   font-size: 16px;
+  font-weight: 500;
 }
 .header-link:hover {
   color: white;
@@ -69,6 +71,24 @@ header {
 .header-title {
   line-height: 50px;
   margin: 0 auto;
+}
+/*  FOOTER  */
+footer {
+  height: 50px;
+  background-color: #77c9dd;
+  color: black;
+}
+.footer-icon {
+  line-height: 30px;
+  float: right;
+  max-width: 40px;
+  max-height: 40px;
+  padding: 8px;
+  margin-left: 16px;
+}
+.footer-icon img {
+  max-width: 100%;
+  max-height: 100%;
 }
 /* HOME */
 .home-intro {
@@ -89,4 +109,37 @@ header {
 .home-use-case > div {
   margin: auto;
   margin-bottom: 20px;
+}
+.download-block {
+  text-align: center;
+}
+.download-block .title {
+  text-align: center;
+  font-size: 28px;
+}
+.download-block .play-store img {
+  margin-top: 42px;
+  height: 80px;
+}
+.download-block a {
+  margin-top: 32px;
+  display: block;
+}
+.download-block a:hover {
+  cursor: pointer;
+}
+.download-block a img {
+  display: block;
+  height: 100px;
+  margin: auto;
+}
+.download-instructions {
+  margin-bottom: 40px;
+  font-size: 22px;
+  text-align: center;
+}
+.get-started-blurb {
+  margin-top: 20px;
+  font-size: 22px;
+  text-align: center;
 }

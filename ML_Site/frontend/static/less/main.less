@@ -1,10 +1,16 @@
 @color-primary: #77c9dd;
+// @color-primary: #00BCD4;
 @color-primary-background: #333637;
+// @color-primary-background: #212121;
 
 .grey-body{
   background-color: @color-primary-background;
   color: white;
 }
+
+// .grey-body a{
+//   color: @color-primary;
+// }
 
 .centered{
   display: block;
@@ -31,7 +37,7 @@
 }
 
 .white-content{
-  background-color: white;
+  background-color: #FAFAFA;
   color: @color-primary-background;
 }
 
@@ -50,6 +56,7 @@
 header{
   height:@header-height;
   background-color: @color-primary;
+  color: black;
 }
 
 .links-row{
@@ -76,6 +83,7 @@ header{
   margin-right: 16px;
   line-height: @header-height;
   font-size: 16px;
+  font-weight: 500;
 
   &:hover{
     color: white;
@@ -86,6 +94,29 @@ header{
 .header-title{
   line-height: @header-height;
   margin:0 auto;
+}
+
+/*  FOOTER  */
+
+@footer-height: 30px;
+footer{
+  height:@header-height;
+  background-color: @color-primary;
+  color: black;
+}
+
+.footer-icon{
+  line-height: @footer-height;
+  float: right;
+  max-width: 40px;
+  max-height: 40px;
+  padding:8px;
+  margin-left:16px;
+
+  img{
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 /* HOME */
@@ -116,4 +147,46 @@ header{
     margin:auto;
     margin-bottom: 20px;
   }
+}
+
+.download-block{
+  text-align: center;
+  .title{
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .windows{
+
+  }
+  .play-store{
+    img{
+      margin-top: 42px;
+      height:80px;
+    }
+  }
+  a{
+    margin-top: 32px;
+    display:block;
+    &:hover{
+      cursor: pointer;
+    }
+    img{
+        display: block;
+        height:100px;
+        margin: auto;
+    }
+  }
+}
+
+.download-instructions{
+  margin-bottom: 40px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.get-started-blurb{
+  margin-top: 20px;
+  font-size: 22px;
+  text-align: center;
 }

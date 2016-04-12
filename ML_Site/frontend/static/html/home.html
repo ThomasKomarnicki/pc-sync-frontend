@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
 
 <div class="container home-intro">
@@ -45,8 +46,29 @@
 
 <div class="white-content standard-content-block">
   <div class="container">
-    <div class="row ">
+    <div class="row">
+      <div class="col-sm-12 clearfix download-instructions">
+        Install both the Windows PC client and Android TV app
+      </div>
+      <div class="clearfix">
+        <div class="col-sm-6 download-block">
+          <div class="title">
+            Download Windows Client
+          </div>
+          <a target="_blank" class="windows"> <img src="{% static "img/windows-logo.png" %}"/> Download here </a>
+        </div>
+        <div class="col-sm-6 download-block">
+          <div class="title">
+            Install Android TV App
+          </div>
 
+          <a href="https://play.google.com" target="_blank" class="play-store"> <img src="{% static "img/en-play-badge.png" %}"/> </a>
+        </div>
+        </div>
+        <div class="get-started-blurb">
+          <a href="/get-started"> Read the quick start guide </a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
