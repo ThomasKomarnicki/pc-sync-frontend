@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Faq
 
 
 def home(request):
@@ -6,7 +7,12 @@ def home(request):
 
 
 def help(request):
-    return render(request, 'help.html')
+    faq = Faq.objects.order_by('order').all()
+    items = []
+    for qa in faq:
+        items.append({'question': qa.question, 'answer': qa.answer})
+
+    return render(request, 'help.html', context={'faq': items})
 
 
 def get_started(request):
