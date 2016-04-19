@@ -2,6 +2,10 @@
   background-color: #333637;
   color: white;
 }
+.white-body {
+  background-color: #FAFAFA;
+  color: #333637;
+}
 .centered {
   display: block;
   text-align: center;
@@ -38,8 +42,7 @@
 /* HEADER */
 header {
   height: 50px;
-  background-color: #77c9dd;
-  color: black;
+  color: #333637;
 }
 .links-row {
   padding: 5px 0;
@@ -57,15 +60,15 @@ header {
 }
 .header-link {
   display: block;
-  color: white;
   float: left;
   margin-right: 16px;
   line-height: 50px;
   font-size: 16px;
+  color: #333637;
   font-weight: 500;
 }
 .header-link:hover {
-  color: white;
+  color: #77c9dd;
   cursor: pointer;
 }
 .header-title {
@@ -142,4 +145,36 @@ footer {
   margin-top: 20px;
   font-size: 22px;
   text-align: center;
+}
+/* FAQ */
+.faq-list {
+  padding-left: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.faq-list-item {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.faq-list-item .question-toggle {
+  width: 20px;
+  height: 20px;
+  background-color: #77c9dd;
+  position: absolute;
+  right: 0;
+}
+.faq-list-item .answer-hidden {
+  display: none;
+}
+.question-container {
+  position: relative;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 22px;
+  color: #77c9dd;
+}
+.answer-container {
+  color: white;
+  font-size: 18px;
+  margin-left: 24px;
 }
