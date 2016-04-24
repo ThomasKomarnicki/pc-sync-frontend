@@ -4,39 +4,43 @@
 
 <div class="container home-intro">
   <div class="centered row home-hero-phrase">
-    Stream videos from your Windows PC to your Android TV.
+    Stream videos from your PC to your Android TV.
   </div>
   <div class="row">
-    <div class="iconography-placeholder col-sm-2 col-sm-offset-2">
-      Placeholder
+    <div class="home-iconography col-sm-2 col-sm-offset-2">
+      <img src="{% static "img/windows-pc-icon.png" %}"/>
     </div>
-    <div class="iconography-placeholder col-sm-2 col-sm-offset-1">
-      Placeholder
+    <div class="home-iconography col-sm-2 col-sm-offset-1">
+      <img src="{% static "img/stream-temp-icon.png" %}"/>
     </div>
-    <div class="iconography-placeholder col-sm-2 col-sm-offset-1">
-      Placeholder
+    <div class="home-iconography col-sm-2 col-sm-offset-1">
+      <img src="{% static "img/android-tv-icon.png" %}"/>
     </div>
   </div>
 </div>
 
-<div class="standard-content-block">
+<div class="standard-content-block blue-body">
   <div class="container">
     <div class="row use-case-row">
       <div class="col-sm-4">
         <div class="home-use-case">
-          <div class="iconography-placeholder-small">Placeholder</div>
+          <div class="home-iconography-small">
+             <img src="{% static "img/video-library-white.png" %}"/>
+          </div>
           Never manually transfer a video file from your computer to your Android TV again
         </div>
       </div>
       <div class="col-sm-4">
         <div class="home-use-case">
-          <div class="iconography-placeholder-small">Placeholder</div>
+          <div class="home-iconography-small">
+             <img src="{% static "img/no-wifi-white.png" %}"/>
+          </div>
           A slow internet connection will never stop you from streaming your own videos
         </div>
       </div>
       <div class="col-sm-4">
         <div class="home-use-case">
-          <div class="iconography-placeholder-small"> Placeholder </div>
+          <div class="iconography-placeholder-small">  placeholder </div>
           Its always on so you can set it and forget it
         </div>
       </div>
@@ -66,7 +70,9 @@
         </div>
         </div>
         <div class="get-started-blurb">
-          <a href="/get-started"> Read the quick start guide </a>
+          <a href="/get-started"> 
+          <button class="btn btn-grey"> Read the quick start guide </button>
+          </a>
         </div>
       </div>
     </div>
