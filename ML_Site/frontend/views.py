@@ -10,15 +10,26 @@ def help(request):
     # faq = Faq.objects.order_by('order').all()
     sections = [
         {
-            'title': 'Connection Issues',
+            'title': 'Connection',
             'items': [
-                        {'question': 'Why is the app never able to connect to my computer?',
-                         'answer': 'Make sure your Android TV and Windows PC are on the same local network'},
+                {'question': 'Why is the app never able to connect to my computer?',
+                 'answer': 'Make sure your Android TV and Windows PC are on the same local network'},
+            ]
+        },
+        {
+            'title': 'Android App',
+            'items': [
 
-                        {'question': 'Why is there a black screen when I try to play some videos?',
-                         'answer': 'These videos may be improperly encoded and therefore not playable'},
-                    ]
-        }
+                {'question': 'Why is there a black screen when I try to play some videos?',
+                 'answer': 'These videos may be improperly encoded and therefore not playable'},
+            ]
+        },
+        {
+            'title': 'Windows App',
+            'items': [
+
+            ]
+        },
     ]
 
     # for qa in faq:
